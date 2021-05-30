@@ -1,0 +1,2 @@
+Para empezar el juego ejecuta el archivo index.html. 
+En la línea 35 de principal.js, puedes cambiar el tiempo para probar si no quieres esperar 1 minuto

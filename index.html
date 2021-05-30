@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CIFRAS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/script.js" language="javascript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div class="grid-container" id="contenedor">
+        <div class="bienvenida">¡Bienvenido al juego de cifras!</div>
+        <div class="antes" id="antes">Antes de comenzar los jugadores elegirán un nombre y un color que les represente:</div>
+        <div class="reglas" id="reglas">¿Cómo jugar?</div>
+
+        <div class="animate__animated animate__bounceInLeft" id="jugador1">
+            <form class="formulario" id="formulario">
+                <label id="nombre1">Nombre de jugador1: </label>
+                <input type="text" class="nombre1" id="nom1" required></input>
+                <span class="error1" id="mensajeError"></span>
+                <br/>
+                <br/>
+                <label id="color1">Color 1:</label>
+                <input type="color" class="color1" id="col1" value="#3933FF" />
+            </form>
+        </div>
+
+        <div class="animate__animated animate__bounceInRight" id="jugador2">
+            <form class="formulario" id="formulario">
+                <label id="nombre2">Nombre de jugador2: </label>
+                <input type="text" class="nombre2" id="nom2" required></input>
+                <span class="error2" id="mensajeError2"></span>
+                <br/>
+                <br/>
+                <label id="color2">Color 2: </label>
+                <input type="color" id="col2" class="color2" value="#FF3333" />
+            </form>
+        </div>
+
+        <div class="comenzar" id="cajaComenzar">
+            <input type="button" id="comenzar" value="Comenzar">
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

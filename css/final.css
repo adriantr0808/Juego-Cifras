@@ -1,0 +1,100 @@
+body {
+    background-image: url("../img/fondoNum.png");
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.cont{
+    width: auto;
+    height: auto;
+    background-color: #f5d9b1;
+    position: relative;
+    animation-name: cont;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes cont{
+from {
+    top: -700px;
+}
+to {
+    top: 13px; 
+    
+    background-color: #d37e38;
+}
+}
+body > p{
+    font-weight: bold;
+    grid-area: btns;
+    font-size: 27px;
+    color:#64391c;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+#marcador,#btns,#punt,body>p{
+    text-align: center;
+    border: 3px solid #854c26;
+    padding:10px;
+    border-radius: 15px;
+    background-color: #f8ae5a;
+}
+
+.cont{
+    display: grid;
+    background-color: #d37e38;
+    grid-gap:30px;
+    border: 3px solid #854c26;
+    border-radius:15px;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-areas: '. . punt punt . .'
+    '. marcador marcador marcador marcador .'
+    '. . btns btns . . '
+    ;
+    padding:20px;
+}
+
+#puntuacion{
+    font-size: 30px;
+    text-align: center;
+}
+
+#punt{
+    grid-area:punt;
+    font-size: 18px;
+}
+#marcador{
+    grid-area: marcador;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#btns{
+    grid-area: btns;
+    font-size: 18px;
+    
+}
+#nueva,#salir{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #64391c;
+    background-color:#d2691e;
+    border-radius: 6px;
+    border: 2px solid #854c26;
+}
+#nueva:hover,#salir:hover{
+    cursor: pointer !important;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-color: #64391c;
+    color:#d2691e;
+    border-color:  #d2691e;
+}
+.animate__bounceIn{
+    animation-delay: 3s;
+}
+

@@ -1,0 +1,135 @@
+
+* {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.reglas:hover,#comboton:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+.color1:hover,.color2:hover{
+    cursor:pointer;
+}
+body{
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 7%;
+    background-image: url("../img/fondoNum.png");
+}
+
+.grid-container {
+    padding-top:3%;
+    padding-bottom:3%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-areas: 
+    '. bienvenida bienvenida bienvenida bienvenida .'
+    'antes antes antes reglas reglas reglas' 
+    'jugador1 jugador1 jugador1 jugador2 jugador2 jugador2'
+    '. . comenzar comenzar . .';
+    border: 3px solid #99592f;
+    border-radius:15px;
+    background-color: #d37e38;
+    height:50%;
+}
+.grid-container{
+        width: 100%;
+        height: 100%;
+        background-color: #f5d9b1;
+        position: relative;
+        animation-name: bienve;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+}
+@keyframes bienve {
+    from {top: -700px;}
+    to {top: 10px; background-color: #d37e38;}
+  }
+
+#jugador1{
+    background-color: #f5d9b1;
+    position: relative;
+    grid-area: jugador1;  
+    border-bottom-right-radius: 5px;
+
+}
+#jugador2{
+    padding-left: 20px;
+    border-bottom-left-radius: 5px;
+    background-color: #f5d9b1;
+    position: relative;
+    grid-area: jugador2;  
+    border-bottom-right-radius: 5px;
+}
+
+.animate__bounceInRight,.animate__bounceInLeft{
+    animation-delay: 2s;
+}
+.bienvenida,.reglas,#jugador1,#jugador2{
+    border-radius:15px;
+    border: 3px solid #99592f;
+    background-color: #f8ae5a;
+}
+.bienvenida {
+    grid-area: bienvenida;
+    padding-top:10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.antes {
+    grid-area: antes;
+    font-size: 18px;
+}
+.reglas{
+    grid-area: reglas;
+    font-size: 24px;
+    text-align: center; 
+}
+
+.comenzar{
+    grid-area: comenzar;
+    border: 3px solid #99592f;
+    border-radius:15px;
+    background-color: #f8ae5a;
+    text-align: center;
+}
+
+#comboton{
+    background-color: #f5d9b1;
+    border: 2px solid #99592f;
+    border-radius:5px;
+}
+.error1, .error2{
+    color: red;
+}
+.nombre1,.nombre2{
+    border: 2px solid #99592f;
+    outline-color: chocolate;
+    border-radius:5px;
+    background-color: #f1e0c9;
+}
+#col1,#col2{
+    background-color: #f3ce9b;
+}
+#comenzar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #64391c;
+    background-color: #d2691e;
+    border-radius: 6px;
+    border: 2px solid #854c26;
+}
+#comenzar:hover{
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-color: #64391c;
+    color: #d2691e;
+    border-color:  #d2691e;
+}

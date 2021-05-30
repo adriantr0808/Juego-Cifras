@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+    <title>CIFRAS</title>
+</head>
+
+<body>
+    <div class="animate__animated animate__heartBeat animate__repeat-2">
+        <input type="button" value="Instrucciones" id="guia">
+    </div>
+    <div class="contenido" id="contenido">
+
+        
+        
+        <div class="resultados" id="resultados">
+            <p class ="turnoDe" id="turnoDe"></p>
+            <p>Numero obtenido: <span id="numeroObtenido"></span></p>
+        </div>
+
+        <div class= "animate__animated animate__bounceInLeft" id="comprobaciones" >
+            <div class="pComprobar">
+                <p class="animate__animated animate__pulse animate__infinite">Antes de pulsar el botón 'Test', asegúrate de que has hecho las operaciones correctas, de lo contrario se cambiará el turno del jugador</p>
+                <p id="mensajeCompr"> Introduce las operaciones que has usado para llegar a ese número</p>
+            </div>
+            <div class="panel" id="panel">
+
+            </div>
+            <div class="numeros" id="numeros">
+                <div class="numero" id="numero1" name="obj">
+
+                </div>
+                <div class="numero" id="numero2" name="obj">
+
+                </div>
+                <div class="numero" id="numero3" name="obj">
+
+                </div>
+                <div class="numero" id="numero4" name="obj">
+
+                </div>
+                <div class="numero" id="numero5" name="obj">
+
+                </div>
+                <div class="numero" id="numero6" name="obj">
+
+                </div>
+                <div class="simbolo" id="simbolo" name="obj">+</div>
+                <div class="simbolo" id="simbolo2" name="obj">-</div>
+                <div class="simbolo" id="simbolo3" name="obj">*</div>
+                <div class="simbolo" id="simbolo4" name="obj">/</div>
+
+            </div>
+            <div class="opciones">
+                <input type="button" value="Operar" id="operar">
+                <input type="button" value="Reset" id="reset">
+                <input type="button" value="Test" id="test">
+                <input type="button" value="Otra operación" id="lado">
+            </div>
+        </div>
+        <div class="jugadores" id="jugadores">
+            <div class="panelDer" id="panelDer">
+                <div>
+                    <p id="numeroObj">Numero objetivo:
+                        <script>
+                            document.write(localStorage.getItem("numeroObj") + " ");
+                        </script>
+                    </p>
+                </div>
+                <div class="obtencion" id="obtencion">
+                    <p id="comprobacion"></p>
+                    <p id="tiempoRes"></p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/test.js" language="javascript" type="text/javascript"></script>
+
+</body>
+
+</html>
